@@ -29,3 +29,11 @@ Instalar dependencias
 Ejecutar aplicación
 
     $ node app
+
+# Paso 5
+Test
+
+    $ curl localhost:8888/a/a  				//obtener token
+	$ curl localhost:8888/auth/g			//lee todos la data
+	$ REST localhost:8888/auth/p			//post con data en body : firstName, lastName, token
+	$ curl localhost:8888/auth/d/{fistName}	//borra data con nombre indicado en firstName
